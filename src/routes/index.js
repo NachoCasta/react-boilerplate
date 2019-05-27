@@ -26,7 +26,7 @@ const Root = props => {
 					<Route
 						path="/"
 						exact
-						render={() => <Heading>Home</Heading>}
+						render={() => <Heading color="white">Home</Heading>}
 					/>
 					<Route path="/about" component={About} />
 					<Route path="/reducer" component={Reducer} />

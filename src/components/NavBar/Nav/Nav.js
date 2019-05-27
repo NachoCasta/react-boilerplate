@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Flex, Box } from "pcln-design-system";
 
 const Nav = ({ children }) => (
-	<Box bg="darkGray" color="white">
+	<Box bg="black" color="white">
 		<Container maxWidth={1280}>
 			<Flex>{children}</Flex>
 		</Container>

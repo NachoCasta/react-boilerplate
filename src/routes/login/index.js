@@ -1,6 +1,6 @@
 import React from "react";
-import { Heading } from "pcln-design-system";
+import { Heading, Card } from "pcln-design-system";
 
-const Login = props => <Heading>Login</Heading>;
+const Login = props => <Heading color="white">Login</Heading>;
 
 export default Login;
