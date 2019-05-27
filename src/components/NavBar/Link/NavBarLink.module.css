@@ -1,0 +1,15 @@
+.link {
+	text-decoration: none;
+	color: lightGray;
+}
+.link div:hover {
+	color: white;
+}
+
+.active {
+	color: white;
+}
+
+.main {
+	font-weight: bold;
+}
