@@ -29,7 +29,7 @@ react-boilerplate
 │   │   │   ├── app.test.js
 │   │   │   └── index.js
 │   │   └── ComponentName
-│   │       ├── ComponentName.css
+│   │       ├── ComponentName.module.css
 │   │       ├── ComponentNameContainer.js
 │   │       ├── ComponentNameContainer.test.js
 │   │       ├── ComponentNameView.js

@@ -16,7 +16,8 @@
     "react-scripts": "3.0.1",
     "react-storage-hooks": "^3.0.3",
     "styled-components": "^4.2.0",
-    "styled-system": "^4.2.2"
+    "styled-system": "^4.2.2",
+    "use-combined-reducers": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
