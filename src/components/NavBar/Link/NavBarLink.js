@@ -13,7 +13,7 @@ const NavBarLink = ({ to, active, right, main, children }) => (
 		})}
 		to={to}
 	>
-		<Box p={3}>{children}</Box>
+		<Box p={[2, 3]}>{children}</Box>
 	</Link>
 );
 

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { StateContext, DispatchContext } from "components/Providers";
 
 export const useAppState = () => useContext(StateContext);
