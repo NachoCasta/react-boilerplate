@@ -3,21 +3,23 @@ import useCombinedReducers from "use-combined-reducers";
 
 import {
 	reducer as demoReducer,
-	initialState as demoInitialState
+	initialState as demoInitialState,
+	actions as demoActions
 } from "components/ReducerDemo";
 
 export const StateContext = createContext(null);
-export const DispatchContext = createContext(null);
+export const ActionsContext = createContext(null);
 
 const ReducerProvider = ({ children }) => {
 	const [state, dispatch] = useCombinedReducers({
 		demo: useReducer(demoReducer, demoInitialState)
 	});
+	const actions = { demo: demoActions(dispatch) };
 	return (
 		<StateContext.Provider value={state}>
-			<DispatchContext.Provider value={dispatch}>
+			<ActionsContext.Provider value={actions}>
 				{children}
-			</DispatchContext.Provider>
+			</ActionsContext.Provider>
 		</StateContext.Provider>
 	);
 };

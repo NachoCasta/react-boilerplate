@@ -1,44 +1,40 @@
 import React from "react";
-import { Heading, Button, RatingBadge } from "pcln-design-system";
-import { Flex, Box, FadeCard } from "components/UI";
-import { useAppState, useAppDispatcher } from "utils";
+import {
+	Flex,
+	Box,
+	CardContainer,
+	Heading,
+	Button,
+	RatingBadge
+} from "components/UI";
+import { useAppState, useAppActions } from "utils";
 
 const Reducer = props => {
-	const { demo } = useAppState();
-	const dispatch = useAppDispatcher();
+	const { demo: state } = useAppState();
+	const { demo: actions } = useAppActions();
 	return (
-		<Flex justifyContent="center">
-			<Box width={[1, 3 / 4, 1 / 2, 1 / 3]}>
-				<FadeCard>
-					<Flex justifyContent="center">
-						<Box>
-							<Heading>Reducer Demo</Heading>
-						</Box>
-					</Flex>
-					<Flex justifyContent="space-around" alignItems="center">
-						<Box width={[1]} py={1}>
-							<Button
-								width={1}
-								onClick={() => dispatch({ type: "INCREMENT" })}
-							>
-								Increment
-							</Button>
-						</Box>
-						<Box py={1}>
-							<RatingBadge>{demo}</RatingBadge>
-						</Box>
-						<Box width={[1]} py={1}>
-							<Button
-								width={1}
-								onClick={() => dispatch({ type: "DECREMENT" })}
-							>
-								Decrement
-							</Button>
-						</Box>
-					</Flex>
-				</FadeCard>
-			</Box>
-		</Flex>
+		<CardContainer width={[1, 3 / 4, 1 / 2, 1 / 3]}>
+			<Flex justifyContent="center">
+				<Box>
+					<Heading align="center">Reducer Demo</Heading>
+				</Box>
+			</Flex>
+			<Flex justifyContent="space-around">
+				<Box width={[1]} p={1}>
+					<Button width={1} onClick={actions.increment}>
+						Increment
+					</Button>
+				</Box>
+				<Box p={1}>
+					<RatingBadge>{state}</RatingBadge>
+				</Box>
+				<Box width={[1]} p={1}>
+					<Button width={1} onClick={actions.decrement}>
+						Decrement
+					</Button>
+				</Box>
+			</Flex>
+		</CardContainer>
 	);
 };
 

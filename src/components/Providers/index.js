@@ -1,2 +1,2 @@
 export { default } from "./Providers";
-export { StateContext, DispatchContext } from "./Reducer";
+export { StateContext, ActionsContext } from "./Reducer";
