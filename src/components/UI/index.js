@@ -7,3 +7,4 @@ export { default as CardContainer } from "./CardContainer";
 export { default as Gradient } from "./Gradient";
 export { default as Form } from "./Form";
 export { default as InputField } from "./InputField";
+export { default as OnClickLink } from "./OnClickLink";

@@ -7,11 +7,8 @@ import {
 	Button,
 	RatingBadge
 } from "components/UI";
-import { useAppState, useAppActions } from "utils";
 
-const Reducer = props => {
-	const { demo: state } = useAppState();
-	const { demo: actions } = useAppActions();
+const Reducer = ({ onIncrement, onDecrement, counter }) => {
 	return (
 		<CardContainer width={[1, 3 / 4, 1 / 2, 1 / 3]}>
 			<Flex justifyContent="center">
@@ -21,15 +18,15 @@ const Reducer = props => {
 			</Flex>
 			<Flex justifyContent="space-around">
 				<Box width={[1]} p={1}>
-					<Button width={1} onClick={actions.increment}>
+					<Button width={1} onClick={onIncrement}>
 						Increment
 					</Button>
 				</Box>
 				<Box p={1}>
-					<RatingBadge>{state}</RatingBadge>
+					<RatingBadge>{counter}</RatingBadge>
 				</Box>
 				<Box width={[1]} p={1}>
-					<Button width={1} onClick={actions.decrement}>
+					<Button width={1} onClick={onDecrement}>
 						Decrement
 					</Button>
 				</Box>
