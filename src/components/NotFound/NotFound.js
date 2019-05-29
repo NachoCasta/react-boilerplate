@@ -1,6 +1,5 @@
 import React from "react";
-import { Heading } from "components/UI";
-import { Fade } from "../Springs";
+import { Heading, Fade } from "components/UI";
 
 const NotFound = props => (
 	<Fade>

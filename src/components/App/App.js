@@ -1,6 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import Providers from "../Providers";
+import Providers from "./Providers";
+import AppNavBar from "./NavBar";
 import Root from "routes";
 
 function App() {

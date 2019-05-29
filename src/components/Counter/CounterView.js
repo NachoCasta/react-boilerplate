@@ -11,11 +11,7 @@ import {
 const Counter = ({ onIncrement, onDecrement, counter }) => {
 	return (
 		<CardContainer width={[1, 3 / 4, 1 / 2, 1 / 3]}>
-			<Flex justifyContent="center">
-				<Box>
-					<Heading align="center">Counter</Heading>
-				</Box>
-			</Flex>
+			<Heading textAlign="center">Counter</Heading>
 			<Flex justifyContent="space-around">
 				<Box width={[1]} p={1}>
 					<Button width={1} onClick={onIncrement}>

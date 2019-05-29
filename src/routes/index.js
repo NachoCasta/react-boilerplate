@@ -1,26 +1,16 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { Heading } from "pcln-design-system";
-import NavBar from "components/NavBar";
-import AppContainer from "components/App/Container";
+import { AppContainer, AppNavBar } from "components/App";
 import About from "./about";
 import Counter from "./counter";
 import Login from "./login";
 import NotFound from "components/NotFound";
 
 const Root = props => {
-	const navBarProps = {
-		current: props.location.pathname,
-		mainItem: { to: "/", label: "Boilerplate", main: true },
-		leftItems: [
-			{ to: "/about", label: "About" },
-			{ to: "/counter", label: "Counter" }
-		],
-		rightItems: [{ to: "/login", label: "Login" }]
-	};
 	return (
 		<React.Fragment>
-			<NavBar {...navBarProps} />
+			<AppNavBar current={props.location.pathname} />
 			<AppContainer>
 				<Switch>
 					<Route

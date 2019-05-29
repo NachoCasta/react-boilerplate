@@ -1,6 +1,6 @@
 import React from "react";
-import { Heading } from "pcln-design-system";
+import AboutComponent from "components/About";
 
-const About = props => <Heading color="white">About</Heading>;
+const About = props => <AboutComponent />;
 
 export default About;
