@@ -4,7 +4,7 @@ import { Heading } from "pcln-design-system";
 import NavBar from "components/NavBar";
 import AppContainer from "components/App/Container";
 import About from "./about";
-import Reducer from "./reducer";
+import Counter from "./counter";
 import Login from "./login";
 import NotFound from "components/NotFound";
 
@@ -14,7 +14,7 @@ const Root = props => {
 		mainItem: { to: "/", label: "Boilerplate", main: true },
 		leftItems: [
 			{ to: "/about", label: "About" },
-			{ to: "/reducer", label: "Reducer" }
+			{ to: "/counter", label: "Counter" }
 		],
 		rightItems: [{ to: "/login", label: "Login" }]
 	};
@@ -29,7 +29,7 @@ const Root = props => {
 						render={() => <Heading color="white">Home</Heading>}
 					/>
 					<Route path="/about" component={About} />
-					<Route path="/reducer" component={Reducer} />
+					<Route path="/counter" component={Counter} />
 					<Route path="/login" component={Login} />
 					<Route path="" component={NotFound} />
 				</Switch>

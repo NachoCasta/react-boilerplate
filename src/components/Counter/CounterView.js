@@ -8,12 +8,12 @@ import {
 	RatingBadge
 } from "components/UI";
 
-const Reducer = ({ onIncrement, onDecrement, counter }) => {
+const Counter = ({ onIncrement, onDecrement, counter }) => {
 	return (
 		<CardContainer width={[1, 3 / 4, 1 / 2, 1 / 3]}>
 			<Flex justifyContent="center">
 				<Box>
-					<Heading align="center">Reducer Demo</Heading>
+					<Heading align="center">Counter</Heading>
 				</Box>
 			</Flex>
 			<Flex justifyContent="space-around">
@@ -35,4 +35,4 @@ const Reducer = ({ onIncrement, onDecrement, counter }) => {
 	);
 };
 
-export default Reducer;
+export default Counter;

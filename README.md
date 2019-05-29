@@ -4,7 +4,7 @@ Personal React boilerplate for new apps
 ## Useful links
 - [Styled System](https://styled-system.com/table/)
 - [Priceline Design System](https://pricelinelabs.github.io/design-system/iconography/)
-- [React Reveal](https://www.react-reveal.com/examples/common/)
+- [React Spring](https://www.react-spring.io/)
 - [React Loading Skeleton](https://github.com/dvtng/react-loading-skeleton)
 - [Enzyme](https://github.com/airbnb/enzyme)
 

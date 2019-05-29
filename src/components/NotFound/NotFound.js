@@ -1,10 +1,10 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
-import { Heading } from "pcln-design-system";
+import { Heading } from "components/UI";
+import { Fade } from "../Springs";
 
 const NotFound = props => (
 	<Fade>
-		<Heading>Not Found</Heading>
+		<Heading color="white">Not Found</Heading>
 	</Fade>
 );
 

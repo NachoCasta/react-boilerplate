@@ -4,10 +4,8 @@ import { useAppState, useAppActions } from "utils";
 import LoginView from "./LoginView";
 
 const Login = props => {
-	const {
-		login: { signIn: signIn }
-	} = useAppState();
-	const { login: actions } = useAppActions();
+	const signIn = useAppState(state => state.login.signIn);
+	const actions = useAppActions(actions => actions.login);
 	const [user, bind] = useForm({
 		email: "",
 		password: "",

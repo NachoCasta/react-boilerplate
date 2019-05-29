@@ -1,29 +1,20 @@
-import React, { createContext, useReducer } from "react";
-import useCombinedReducers from "use-combined-reducers";
+import React, { createContext } from "react";
+import {
+	useReducerWithActions,
+	useCombinedReducersWithActions
+} from "utils/hooks";
 
-import {
-	reducer as demoReducer,
-	initialState as demoInitialState,
-	actions as demoActions
-} from "components/ReducerDemo";
-import {
-	reducer as loginReducer,
-	initialState as loginInitialState,
-	actions as loginActions
-} from "components/Login";
+import * as Counter from "components/Counter";
+import * as Login from "components/Login";
 
 export const StateContext = createContext(null);
 export const ActionsContext = createContext(null);
 
 const ReducerProvider = ({ children }) => {
-	const [state, dispatch] = useCombinedReducers({
-		demo: useReducer(demoReducer, demoInitialState),
-		login: useReducer(loginReducer, loginInitialState)
+	const [state, actions] = useCombinedReducersWithActions({
+		counter: useReducerWithActions(Counter),
+		login: useReducerWithActions(Login)
 	});
-	const actions = {
-		demo: demoActions(dispatch),
-		login: loginActions(dispatch)
-	};
 	return (
 		<StateContext.Provider value={state}>
 			<ActionsContext.Provider value={actions}>
