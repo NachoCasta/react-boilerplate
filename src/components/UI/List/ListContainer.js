@@ -4,8 +4,8 @@ import Item from "./Item";
 
 const ListComponent = ({ listProps, itemProps, children }) => (
 	<List>
-		{children.map(child => (
-			<Item>{child}</Item>
+		{children.map((child, i) => (
+			<Item key={i}>{child}</Item>
 		))}
 	</List>
 );

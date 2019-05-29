@@ -1,4 +1,4 @@
-.gradient::after div:first-child {
+.gradient:after {
   display: block;
   position: relative;
   background-image: linear-gradient(

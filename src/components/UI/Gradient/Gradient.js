@@ -5,7 +5,7 @@ import styles from "./Gradient.module.css";
 const Gradient = styled("div")(space, width, height);
 
 Gradient.defaultProps = {
-	className: styles.gradient
+	//className: styles.gradient
 };
 
 export default Gradient;

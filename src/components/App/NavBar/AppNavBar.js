@@ -7,7 +7,8 @@ const AppNavBar = ({ current }) => {
 		mainItem: { to: "/", label: "Boilerplate", main: true },
 		leftItems: [
 			{ to: "/about", label: "About" },
-			{ to: "/counter", label: "Counter" }
+			{ to: "/counter", label: "Counter" },
+			{ to: "/skeleton", label: "Skeleton" }
 		],
 		rightItems: [{ to: "/login", label: "Login" }]
 	};

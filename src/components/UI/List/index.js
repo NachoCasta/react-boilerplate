@@ -1,1 +1,1 @@
-export { default as List } from "./ListComponent";
+export { default as List } from "./ListContainer";
