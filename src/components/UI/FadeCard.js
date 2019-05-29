@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import { Fade } from "../Springs";
+import { Fade } from "./Springs";
 
 const FadeCard = ({ children, ...rest }) => {
 	return (
