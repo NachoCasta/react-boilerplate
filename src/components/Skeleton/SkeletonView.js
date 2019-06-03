@@ -1,6 +1,6 @@
 import React from "react";
 import Skeleton from "react-loading-skeleton";
-import { CardContainer, Heading, Text, Divider } from "components/UI";
+import { CardContainer, Heading, Text } from "components/UI";
 
 const SkeletonView = ({
 	title,
