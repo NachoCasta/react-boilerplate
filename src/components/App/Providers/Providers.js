@@ -2,14 +2,14 @@ import React from "react";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { ThemeProvider } from "pcln-design-system";
-import ReducerProvider from "./Reducer";
+import ReduxProvider from "./Redux";
 
 const history = createBrowserHistory();
 
 const Providers = ({ children }) => (
 	<Router history={history}>
 		<ThemeProvider>
-			<ReducerProvider>{children}</ReducerProvider>
+			<ReduxProvider>{children}</ReduxProvider>
 		</ThemeProvider>
 	</Router>
 );

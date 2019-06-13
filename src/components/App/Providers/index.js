@@ -1,2 +1,2 @@
 export { default } from "./Providers";
-export { StateContext, ActionsContext } from "./Reducer";
+export { ActionsContext } from "./Redux";

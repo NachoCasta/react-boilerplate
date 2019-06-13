@@ -1,9 +1,9 @@
 import React from "react";
 import CounterView from "./CounterView";
-import { useStore, useActions } from "utils";
+import { useSelector, useActions } from "utils";
 
 const Counter = props => {
-	const counter = useStore(state => state.counter);
+	const counter = useSelector(state => state.counter);
 	const actions = useActions(actions => actions.counter);
 	return (
 		<CounterView

@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm } from "utils";
-import { useStore, useActions } from "utils";
+import { useSelector, useActions } from "utils";
 import LoginView from "./LoginView";
 
 const Login = props => {
-	const signIn = useStore(state => state.login.signIn);
+	const signIn = useSelector(state => state.login.signIn);
 	const actions = useActions(actions => actions.login);
 	const [user, bind] = useForm({
 		email: "",

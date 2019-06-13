@@ -1,7 +1,6 @@
-export const initialState = { signIn: true };
+const initialState = { signIn: true };
 
-export const reducer = (state, action) => {
-	console.log(action);
+export const reducer = (state = initialState, action) => {
 	switch (action.type) {
 		case "SET_SIGN_IN":
 			return { ...state, signIn: action.payload };
