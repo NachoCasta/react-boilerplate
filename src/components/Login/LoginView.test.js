@@ -1,5 +1,6 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
+
 import { Text, Button, OnClickLink } from "components/UI";
 import LoginView from "./LoginView";
 
