@@ -42,18 +42,12 @@ const Login = props => {
 	}
 	return (
 		<LoginView
-			submitLabel={signIn ? "Sign In" : "SignUp"}
+			signIng={signIn}
 			fields={fields}
 			onSubmit={() => console.log(user)}
-			footerText={
-				signIn
-					? "Don't have an account yet?"
-					: "Already have an account?"
-			}
 			footerButton={() =>
 				signIn ? actions.setSignUp() : actions.setSignIn()
 			}
-			footerButtonText={signIn ? "Sign Up" : "Sign In"}
 		/>
 	);
 };

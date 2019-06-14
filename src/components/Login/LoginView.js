@@ -11,14 +11,7 @@ import {
 	OnClickLink
 } from "components/UI";
 
-const Login = ({
-	fields,
-	onSubmit,
-	submitLabel,
-	footerText,
-	footerButton,
-	footerButtonText
-}) => (
+const Login = ({ fields, onSubmit, signIn, footerButton }) => (
 	<CardContainer width={[1, 3 / 4, 2 / 3, 1 / 2]}>
 		<Heading textAlign="center">Authentication</Heading>
 		<Form>
@@ -30,14 +23,16 @@ const Login = ({
 				))}
 				<Box width={1} p={1}>
 					<Button type="button" width={1} onClick={onSubmit}>
-						{submitLabel}
+						{signIn ? "Sign In" : "Sign Up"}
 					</Button>
 				</Box>
 			</Flex>
 		</Form>
 		<Text textAlign="center">
-			{footerText}{" "}
-			<OnClickLink onClick={footerButton}>{footerButtonText}</OnClickLink>
+			{signIn ? "Don't have an account yet?" : "Already have an account?"}
+			<OnClickLink onClick={footerButton}>
+				{signIn ? "Sign Up" : "Sign In"}
+			</OnClickLink>
 		</Text>
 	</CardContainer>
 );

@@ -8,7 +8,12 @@ describe("ComponentView", () => {
 	beforeEach(() => {
 		component = shallow(<ComponentView />);
 	});
+
 	it("renders", () => {
 		shallow(<ComponentView />);
+	});
+
+	it("matches snapshot", () => {
+		expect(component).toMatchSnapshot();
 	});
 });

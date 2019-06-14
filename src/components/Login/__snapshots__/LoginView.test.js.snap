@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginView SignIn matches snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`LoginView SignUp matches snapshot 1`] = `ShallowWrapper {}`;
