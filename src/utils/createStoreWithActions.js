@@ -8,7 +8,7 @@ const createStoreWithActions = reducersWithActions => {
 	const rootReducer = combineReducers(reducers);
 	const store = createStore(rootReducer);
 	const dispatch = action => {
-		console.log(action);
+		//console.log(action);
 		return store.dispatch(action);
 	};
 	const actions = {};

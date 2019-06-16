@@ -5,6 +5,7 @@ import { AppContainer, AppNavBar } from "components/App";
 import About from "./about";
 import Counter from "./counter";
 import Skeleton from "./skeleton";
+import Todos from "./todos";
 import Login from "./login";
 import NotFound from "components/NotFound";
 
@@ -22,6 +23,7 @@ const Root = props => {
 					<Route path="/about" component={About} />
 					<Route path="/counter" component={Counter} />
 					<Route path="/skeleton" component={Skeleton} />
+					<Route path="/todos" component={Todos} />
 					<Route path="/login" component={Login} />
 					<Route path="" component={NotFound} />
 				</Switch>

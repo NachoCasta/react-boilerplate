@@ -11,3 +11,4 @@ export { default as InputField } from "./InputField";
 export { default as OnClickLink } from "./OnClickLink";
 export { default as NavBar } from "./NavBar";
 export { default as GradientBackgroundImage } from "./GradientBackgroundImage";
+export { default as Input } from "./Input";

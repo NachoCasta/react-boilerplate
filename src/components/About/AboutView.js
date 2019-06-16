@@ -16,6 +16,7 @@ const About = () => (
 				React Loading Skeleton
 			</Link>
 			<Link href="https://github.com/airbnb/enzyme">Enzyme</Link>
+			<Link href="https://octicons.github.com/">Octicons</Link>
 		</List>
 	</CardContainer>
 );

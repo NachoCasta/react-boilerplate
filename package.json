@@ -11,6 +11,7 @@
     "react-dom": "^16.8.6",
     "react-firebase-hooks": "^2.0.0",
     "react-loading-skeleton": "^1.1.2",
+    "react-octicon": "^3.0.1",
     "react-redux": "^7.1.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "3.0.1",

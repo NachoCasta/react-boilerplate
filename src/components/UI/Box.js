@@ -11,7 +11,7 @@ import {
 } from "styled-system";
 import { Box } from "pcln-design-system";
 
-const MyBox = styled(Box)(fontSize, flex, order, alignSelf, borders);
+const MyBox = styled(Box)(fontSize, flex, order, alignSelf, borders, color);
 
 MyBox.defaultProps = {};
 
