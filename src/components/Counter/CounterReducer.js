@@ -3,6 +3,7 @@ import { database } from "config";
 const initialState = 0;
 
 export const reducer = (state = initialState, action) => {
+	console.log(action);
 	const { type, payload } = action;
 	switch (type) {
 		case "SET_COUNTER":

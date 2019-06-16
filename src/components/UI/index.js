@@ -1,4 +1,5 @@
 export * from "pcln-design-system";
+export * from "react-spinners";
 export * from "./Springs";
 export * from "./List";
 export { default as Box } from "./Box";

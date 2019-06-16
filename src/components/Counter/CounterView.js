@@ -5,9 +5,9 @@ import {
 	CardContainer,
 	Heading,
 	Button,
-	RatingBadge
+	RatingBadge,
+	BeatLoader
 } from "components/UI";
-import Octicon from "react-octicon";
 
 const Counter = ({ onIncrement, onDecrement, counter, loading }) => {
 	return (
@@ -21,7 +21,11 @@ const Counter = ({ onIncrement, onDecrement, counter, loading }) => {
 				</Box>
 				<Box p={1}>
 					<RatingBadge>
-						{loading ? <Octicon name="sync" spin /> : counter}
+						{loading ? (
+							<BeatLoader color="white" size={8} />
+						) : (
+							counter
+						)}
 					</RatingBadge>
 				</Box>
 				<Box width={[1]} p={1}>

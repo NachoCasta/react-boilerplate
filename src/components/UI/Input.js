@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { fontSize, borders, space } from "styled-system";
+import { fontSize, borders } from "styled-system";
 import { Input } from "pcln-design-system";
 
 const MyInput = styled(Input)(fontSize, borders);

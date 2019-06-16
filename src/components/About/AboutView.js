@@ -17,6 +17,7 @@ const About = () => (
 			</Link>
 			<Link href="https://github.com/airbnb/enzyme">Enzyme</Link>
 			<Link href="https://octicons.github.com/">Octicons</Link>
+			<Link href="https://www.react-spinners.com/">React Spinners</Link>
 		</List>
 	</CardContainer>
 );
