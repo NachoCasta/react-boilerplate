@@ -1,4 +1,6 @@
-import { combineReducers, createStore } from "redux";
+import { combineReducers, createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import { save, load } from "redux-localstorage-simple";
 
 const createStoreWithActions = reducersWithActions => {
 	const reducers = {};
@@ -6,9 +8,20 @@ const createStoreWithActions = reducersWithActions => {
 		key => (reducers[key] = reducersWithActions[key].reducer)
 	);
 	const rootReducer = combineReducers(reducers);
-	const store = createStore(rootReducer);
+	const middlewares = [thunk, save()];
+	if (process.env.NODE_ENV === `development`) {
+		const { createLogger } = require(`redux-logger`);
+		const logger = createLogger({
+			collapsed: true
+		});
+		middlewares.push(logger);
+	}
+	const store = createStore(
+		rootReducer,
+		load(),
+		applyMiddleware(...middlewares)
+	);
 	const dispatch = action => {
-		//console.log(action);
 		return store.dispatch(action);
 	};
 	const actions = {};
