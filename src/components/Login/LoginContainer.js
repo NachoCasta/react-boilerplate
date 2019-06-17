@@ -42,7 +42,7 @@ const Login = props => {
 	}
 	return (
 		<LoginView
-			signIng={signIn}
+			signIn={signIn}
 			fields={fields}
 			onSubmit={() => console.log(user)}
 			footerButton={() =>

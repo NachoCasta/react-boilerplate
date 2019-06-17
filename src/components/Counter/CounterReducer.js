@@ -13,8 +13,8 @@ export const reducer = (state = initialState, action) => {
 };
 
 export const actions = dispatch => ({
-	setCounter: value => {
+	setCounter: (value, update = true) => {
 		dispatch({ type: "SET_COUNTER", payload: value });
-		return database.ref("counter").set(value);
+		return update && database.ref("counter").set(value);
 	}
 });
