@@ -4,22 +4,19 @@ import {
 	useSelector,
 	useActions,
 	useFirebaseState,
-	getDatabaseRef
+	useSpringInitializer
 } from "utils";
 
 const Counter = props => {
 	const counter = useSelector(state => state.counter);
 	const { setCounter } = useActions(actions => actions.counter);
-	const [loading] = useFirebaseState(
-		getDatabaseRef("counter"),
-		counter,
-		setCounter
-	);
+	const [loading] = useFirebaseState("counter", counter, setCounter);
+	const animatedCounter = useSpringInitializer(counter, loading);
 	return (
 		<CounterView
 			onIncrement={() => setCounter(counter + 1)}
 			onDecrement={() => setCounter(counter - 1)}
-			counter={counter}
+			counter={animatedCounter}
 			loading={loading}
 		/>
 	);

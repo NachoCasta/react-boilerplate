@@ -8,6 +8,7 @@ import {
 	RatingBadge,
 	BeatLoader
 } from "components/UI";
+import { animated } from "react-spring";
 
 const Counter = ({ onIncrement, onDecrement, counter, loading }) => {
 	return (
@@ -24,7 +25,7 @@ const Counter = ({ onIncrement, onDecrement, counter, loading }) => {
 						{loading ? (
 							<BeatLoader color="white" size={8} />
 						) : (
-							counter
+							<animated.span>{counter}</animated.span>
 						)}
 					</RatingBadge>
 				</Box>
