@@ -22,7 +22,7 @@ const Counter = ({ onIncrement, onDecrement, counter, loading }) => {
 				</Box>
 				<Box p={1}>
 					<RatingBadge>
-						{loading ? (
+						{loading && !counter ? (
 							<BeatLoader color="white" size={8} />
 						) : (
 							<animated.span>{counter}</animated.span>
