@@ -2,6 +2,8 @@
 
 Personal React boilerplate for new apps
 
+[Live Demo](https://react-boilerplate-nachocasta.web.app/)
+
 ## Useful links
 
 -   [Styled System](https://styled-system.com/table/)
@@ -9,6 +11,8 @@ Personal React boilerplate for new apps
 -   [React Spring](https://www.react-spring.io/)
 -   [React Loading Skeleton](https://github.com/dvtng/react-loading-skeleton)
 -   [Enzyme](https://github.com/airbnb/enzyme)
+-   [Octicons](https://octicons.github.com)
+-   [React Spinners](https://www.react-spinners.com)
 
 ## File structure
 
