@@ -1,29 +1,15 @@
 import React from "react";
-import {
-	FormField,
-	Label,
-	Icon,
-	Input,
-	Tooltip,
-	Relative
-} from "pcln-design-system";
+import { Form, Icon, Input } from "antd";
 
 const InputField = ({ name, label, icon, error, ...rest }) => (
-	<Relative ml={icon ? "5px" : null} mr={icon ? "-3px" : null}>
-		<FormField>
-			<Label style={{ width: "200px" }} htmlFor={name}>
-				{label}
-			</Label>
-			{icon && <Icon name={icon} size="20" />}
-			<Input id={name} name={name} {...rest} />
-			{error && <Icon name="Warning" color="red" />}
-		</FormField>
-		{error && (
-			<Tooltip bottom right color="white" bg="red">
-				{error}
-			</Tooltip>
-		)}
-	</Relative>
+	<Form.Item style={{ marginBottom: 0 }} label={label}>
+		<Input
+			prefix={<Icon type={icon} style={{ color: "rgba(0,0,0,.25)" }} />}
+			id={name}
+			name={name}
+			{...rest}
+		/>
+	</Form.Item>
 );
 
 export default InputField;

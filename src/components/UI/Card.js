@@ -1,17 +1,11 @@
-import React from "react";
-import { Card } from "pcln-design-system";
+import styled from "styled-components";
+import { Card } from "antd";
+import { space, color } from "styled-system";
 
-const MyCard = ({ children, ...rest }) => (
-	<Card
-		boxShadowSize="xl"
-		borderWidth={0}
-		borderRadius={1}
-		p={2}
-		bg="white"
-		{...rest}
-	>
-		{children}
-	</Card>
-);
+const MyCard = styled(Card)(color, space);
+
+MyCard.defaultProps = {
+	bg: "white"
+};
 
 export default MyCard;

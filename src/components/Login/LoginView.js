@@ -12,8 +12,10 @@ import {
 } from "components/UI";
 
 const Login = ({ fields, onSubmit, signIn, footerButton }) => (
-	<CardContainer width={[1, 3 / 4, 2 / 3, 1 / 2]}>
-		<Heading textAlign="center">Authentication</Heading>
+	<CardContainer
+		title={<Heading textAlign="center">Authentication</Heading>}
+		width={[1, 3 / 4, 2 / 3, 1 / 2]}
+	>
 		<Form>
 			<Flex justifyContent="space-around">
 				{fields.map(({ width, label, ...rest }) => (
@@ -22,7 +24,7 @@ const Login = ({ fields, onSubmit, signIn, footerButton }) => (
 					</Box>
 				))}
 				<Box width={1} p={1}>
-					<Button type="button" width={1} onClick={onSubmit}>
+					<Button type="primary" width={1} onClick={onSubmit}>
 						{signIn ? "Sign In" : "Sign Up"}
 					</Button>
 				</Box>

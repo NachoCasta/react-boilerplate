@@ -12,11 +12,18 @@ import { animated } from "react-spring";
 
 const Counter = ({ onIncrement, onDecrement, counter, loading }) => {
 	return (
-		<CardContainer width={[1, 3 / 4, 1 / 2, 1 / 3]}>
-			<Heading textAlign="center">Counter</Heading>
+		<CardContainer
+			title={<Heading textAlign="center">Counter</Heading>}
+			width={[1, 3 / 4, 1 / 2, 1 / 3]}
+		>
 			<Flex justifyContent="space-around">
 				<Box width={[1]} p={1}>
-					<Button width={1} onClick={onIncrement} disabled={loading}>
+					<Button
+						type="primary"
+						width={1}
+						onClick={onIncrement}
+						disabled={loading}
+					>
 						Increment
 					</Button>
 				</Box>
@@ -30,7 +37,12 @@ const Counter = ({ onIncrement, onDecrement, counter, loading }) => {
 					</RatingBadge>
 				</Box>
 				<Box width={[1]} p={1}>
-					<Button width={1} onClick={onDecrement} disabled={loading}>
+					<Button
+						type="primary"
+						width={1}
+						onClick={onDecrement}
+						disabled={loading}
+					>
 						Decrement
 					</Button>
 				</Box>

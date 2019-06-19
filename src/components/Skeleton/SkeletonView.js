@@ -11,10 +11,14 @@ const SkeletonView = ({
 	paragraph3,
 	paragraph4
 }) => (
-	<CardContainer p={[2, 3, 4]} width={1}>
-		<Heading.h1 textAlign="center">
-			{title ? title : <Skeleton width={200} />}
-		</Heading.h1>
+	<CardContainer
+		title={
+			<Heading textAlign="center">
+				{title ? title : <Skeleton width={200} />}
+			</Heading>
+		}
+		width={1}
+	>
 		<Heading.h2>
 			{subtitle1 ? subtitle1 : <Skeleton width={200} />}
 		</Heading.h2>

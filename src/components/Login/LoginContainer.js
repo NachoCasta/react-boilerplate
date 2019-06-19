@@ -15,7 +15,7 @@ const Login = props => {
 		{
 			...bind("email"),
 			label: "Email",
-			icon: "Email",
+			icon: "mail",
 			placeholder: "user@domain.com",
 			width: [1, null, null, signIn ? 1 / 2 : 1]
 		},
@@ -23,8 +23,8 @@ const Login = props => {
 			...bind("password"),
 			label: "Password",
 			type: "password",
-			icon: "Key",
-			placeholder: "password",
+			icon: "lock",
+			placeholder: "Password",
 			width: [1, null, null, 1 / 2]
 		}
 	];
@@ -34,8 +34,8 @@ const Login = props => {
 			...bind("password_confirmation"),
 			label: "Confirm Password",
 			type: "password",
-			icon: "Key",
-			placeholder: "password",
+			icon: "lock",
+			placeholder: "Repeat password",
 			width: [1, null, null, 1 / 2],
 			error: password !== password_confirmation && "Passwords don't match"
 		});
