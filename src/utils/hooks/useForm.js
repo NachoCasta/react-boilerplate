@@ -5,7 +5,7 @@ const useForm = initialState => {
 	const bind = key => ({
 		id: key,
 		name: key,
-		autocomplete: key,
+		autoComplete: key,
 		value: state[key],
 		onChange: e => setState({ ...state, [key]: e.target.value })
 	});
