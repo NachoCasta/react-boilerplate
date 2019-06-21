@@ -5,6 +5,7 @@
   "dependencies": {
     "antd": "^3.19.6",
     "classnames": "^2.2.6",
+    "deep-equal": "^1.0.1",
     "firebase": "^5.7.0",
     "history": "^4.9.0",
     "pcln-design-system": "^2.0.7",
