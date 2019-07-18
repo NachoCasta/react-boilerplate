@@ -22,6 +22,12 @@ const About = () => (
 				React Loading Skeleton
 			</Link>
 			<Link href="https://github.com/airbnb/enzyme">Enzyme</Link>
+			<Link href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+				Flexbox Guide
+			</Link>
+			<Link href="https://firebase.google.com/docs/reference/js?hl=Es-419">
+				Firebase
+			</Link>
 		</List>
 	</CardContainer>
 );
