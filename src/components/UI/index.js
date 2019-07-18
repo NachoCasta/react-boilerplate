@@ -21,3 +21,4 @@ export { default as NavBar } from "./NavBar";
 export { default as GradientBackgroundImage } from "./GradientBackgroundImage";
 export { default as Input } from "./Input";
 export { default as Button } from "./Button";
+export { default as LoadingButton } from "./LoadingButton";
