@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { width, borders } from "styled-system";
+import { width, borders, space } from "styled-system";
 import { Button } from "antd";
 
-const MyButton = styled(Button)(width, borders);
+const MyButton = styled(Button)(width, borders, space);
 
 MyButton.defaultProps = {};
 

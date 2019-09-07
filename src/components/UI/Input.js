@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { fontSize, borders } from "styled-system";
-import { Input } from "pcln-design-system";
+import { fontSize, borders, space } from "styled-system";
+import { Input } from "antd";
 
-const MyInput = styled(Input)(fontSize, borders);
+const MyInput = styled(Input)(fontSize, borders, space);
 
 MyInput.defaultProps = {};
 

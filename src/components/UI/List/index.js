@@ -1,1 +1,1 @@
-export { default as List } from "./ListContainer";
+export { default as LinkList } from "./ListContainer";

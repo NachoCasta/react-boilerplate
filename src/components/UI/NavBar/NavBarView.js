@@ -1,14 +1,14 @@
 import React from "react";
-import { Hide, IconButton } from "pcln-design-system";
+import { Hide, Box } from "pcln-design-system";
 import Nav from "./Nav";
 import Group from "./Group";
-import { Box } from "pcln-design-system";
 import Dropdown from "./Dropdown";
 import { Expand } from "../Springs";
+import { Button } from "antd";
 
 const NavBar = ({ mainItem, leftLinks, rightLinks, onDropdownClick, open }) => (
 	<React.Fragment>
-		<Hide xs>
+		<Hide xs sm>
 			<Nav>
 				<Group>
 					{mainItem}
@@ -17,16 +17,16 @@ const NavBar = ({ mainItem, leftLinks, rightLinks, onDropdownClick, open }) => (
 				<Group right>{rightLinks}</Group>
 			</Nav>
 		</Hide>
-		<Hide sm md lg xl>
+		<Hide md lg xl>
 			<Nav>
 				<Group>{mainItem}</Group>
 				<Group right>
 					<Box p={[2, 3]}>
-						<IconButton
-							name="Menu"
-							size={24}
-							color="white"
-							title="Menu"
+						<Button
+							size="small"
+							icon="menu"
+							ghost
+							style={{ border: 0 }}
 							onClick={onDropdownClick}
 						/>
 					</Box>
