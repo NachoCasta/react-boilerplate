@@ -1,19 +1,16 @@
 import React from "react";
 import { mount } from "enzyme";
-
 import Providers from "components/App/Providers";
-import ComponentContainer from "./ComponentContainer";
+import ElementsContainer from "./ElementsContainer";
 
-describe("ComponentContainer", () => {
+describe("ElementsContainer", () => {
 	let component;
 	beforeEach(() => {
 		component = mount(
 			<Providers>
-				<ComponentContainer />
+				<ElementsContainer />
 			</Providers>
 		);
 	});
-	it("renders", () => {
-		mount(<ComponentContainer />);
-	});
+	it("renders", () => {});
 });

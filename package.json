@@ -27,7 +27,8 @@
         "redux-thunk": "^2.3.0",
         "styled-components": "^4.2.0",
         "styled-system": "^4.2.2",
-        "use-combined-reducers": "^1.0.4"
+        "use-combined-reducers": "^1.0.4",
+        "uuid": "^3.3.3"
     },
     "scripts": {
         "start": "react-scripts start",

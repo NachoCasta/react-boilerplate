@@ -1,14 +1,14 @@
 export * from "react-spinners";
 export * from "./Springs";
-export * from "./List";
+export * from "./LinkList";
 export * from "antd";
 export {
-	Container,
-	Heading,
-	Text,
-	Link,
-	RatingBadge,
-	Hide
+    Container,
+    Heading,
+    Text,
+    Link,
+    RatingBadge,
+    Hide
 } from "pcln-design-system";
 export { default as Box } from "./Box";
 export { default as Flex } from "./Flex";
