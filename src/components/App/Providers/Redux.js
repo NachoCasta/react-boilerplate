@@ -6,8 +6,9 @@ import reducers from "reducers";
 
 export const ActionsContext = createContext(null);
 
+const [store, actions] = createStoreWithActions(reducers);
+
 const ReducerProvider = ({ children }) => {
-    const [store, actions] = createStoreWithActions(reducers);
     return (
         <Provider store={store}>
             <ActionsContext.Provider value={actions}>
